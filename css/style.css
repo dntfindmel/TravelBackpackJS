@@ -1,0 +1,150 @@
+html {
+    background: radial-gradient(farthest-corner at right top, purple, black);
+    height: 100%;
+    font-family: 'Roboto', cursive;
+}
+
+.conteudo {
+    padding: 10vh 3em 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.principal {
+    flex-grow: 1;
+    flex-basis: auto;
+    min-width: 600px;
+    padding: 4em 2em 2em;
+    box-sizing: border-box;
+    display: flex;
+    background: pink;
+    border-radius: 10px;
+    gap: 2em;
+}
+  
+.mochila {
+    min-width: 170px;
+    max-width: 170px;
+    height: 180px;
+    padding-top: 80px;
+    background-color: purple;
+    box-shadow: inset 0 6px 0 2px plum, 0 -93px 0 -77px black, 0 -93px 0 -72px purple, 0 -93px 0 -68px black;
+    background-image: linear-gradient(to right, transparent 5px, transparent 20px, transparent 1px, transparent 25px, transparent 5px, transparent 20px, transparent 20px, transparent 86px, purple 45px, purple 230px, transparent 25px, transparent 172px );
+    background-position: center 254px;
+    background-size: 305px 6px;
+    background-repeat: repeat-x; 
+    border: 5px solid black;
+    border-radius: 85px 85px 44px 44px;
+    display: inline-block;
+    vertical-align: top;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+  
+.mochila:before, .mochila:after {
+    display: block;
+    content: '';
+    position: absolute;
+  }
+  
+.mochila:before {
+    height: 75px;
+    width: 118px;
+    background-image: radial-gradient(circle closest-corner at 13px 29px , black, black 2px, transparent 2px, transparent), radial-gradient(circle closest-corner at 13px 29px , plum, black 4px, transparent 4px, transparent), linear-gradient(to bottom, transparent 10px, transparent 15px, #491033 5px, #491033 18px, transparent 18px, transparent 100px), linear-gradient(to right, purple 10px, purple 10px, transparent 10px, transparent 16px, purple 9px, purple 50px), linear-gradient(to bottom, purple 8px, purple 16px, black 8px, black 30px, purple 20px, purple 72px, purple 10px, purple 57px, purple 5%);
+    margin-left: 22px;
+    margin-top: 58px;
+    border: 4px solid black;
+    border-radius: 11px;
+    box-shadow: 0 4px 0 0 plum, inset 0px 4px 1px 0 purple;
+    content: '||';
+    color: transparent;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow: rgb(0, 0, 0) -2px -86px 0px;
+    font-size: 14px;
+}
+  
+.mochila:after {
+    margin-left: 67px;
+    margin-top: -30px;
+    background: pink;
+    width:26px;
+    height:26px;
+    border: 3px solid black;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
+
+.adicionar {
+    width: 100%;
+}
+
+.adicionar input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 1em;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: 2px solid #40112D;
+}
+
+.adicionar label {
+    display: block;
+}
+
+.cadastrar {
+    background-color: #40112D;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    margin-right: 1em;
+}
+
+.item {
+    list-style: none;
+    padding: 0.5em 1em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    Background: pink;
+    font-weight: 400;
+}
+
+button {
+    margin-left: 1.5em;
+    background-color: transparent;
+    border: 2px solid purple;
+    border-radius: 100%;
+    color: purple;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
